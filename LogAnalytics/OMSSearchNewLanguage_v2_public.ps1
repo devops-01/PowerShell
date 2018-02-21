@@ -67,7 +67,7 @@ $resourceGroup = "OMS-JUMPSTART"
 $AzureUser = 'LAQueryUser@omstraining.onmicrosoft.com'
 
 # Azure user's password to login via Azure RM
-$AzurePassword = 'Kapa6172_1'
+$AzurePassword = 'Ka6w452_6'
 
 # Results objects array
 $Results = @()
