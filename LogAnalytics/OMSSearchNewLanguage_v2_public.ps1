@@ -1,5 +1,4 @@
-﻿<#
-<# Introduction to the script
+﻿<# Introduction to the script
 ****************************************************************************************** 
 *
 *                             [ Author ]
