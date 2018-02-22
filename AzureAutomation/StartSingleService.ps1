@@ -6,14 +6,14 @@ Test, Test, Test and ... guess what... Test again!:)
 [CmdletBinding()]
 Param (
       
-		[Parameter(Mandatory = $true)]
+	[Parameter(Mandatory = $true)]
         [ValidateNotNullorEmpty()]		
         [string]$ServiceName,
-		[Parameter(Mandatory = $true)]
+	[Parameter(Mandatory = $true)]
         [ValidateNotNullorEmpty()]
-		[string]$ComputerName
+	[string]$ComputerName
 		
-	  )
+)
 
 Try {
     $ErrorActionPreference = "Stop"
