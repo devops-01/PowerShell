@@ -1,3 +1,8 @@
+<#
+This is example script which used for Azure Automation Runbook.
+Create or add the script as a Runbook on Azure Portal or via PowerShell.
+Test, Test, Test and ... guess what... Test again!:)
+#>
 [CmdletBinding()]
 Param (
       
@@ -16,7 +21,7 @@ Try {
     Write-Output ""
     Write-Verbose "[$(Get-Date)] Checking the status of the Service '$($ServiceName)' on the Computer '$($ComputerName)'"
     $Svc = Get-Service -Name $ServiceName -ComputerName $ComputerName 
-    $SvcResult = $Svc | Select Name, Status
+    $SvcResult = $Svc | Select-Object Name, Status
     Write-Verbose "[$(Get-Date)] Output from the check is: $($SvcResult)"
 
         If ($Svc.Name -eq $ServiceName) {
